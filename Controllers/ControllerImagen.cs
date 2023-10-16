@@ -23,7 +23,7 @@ namespace WebApplication1.Controllers
         public IActionResult Conectdb([FromServices] ContextImagenes co)
         {
             co.Database.EnsureCreated();
-            return Ok("Conectado a la base de datos");
+            return Ok("Conectado a la base de datos :)");
         }
         [HttpGet]
         [Route("[action]/{id}")]
