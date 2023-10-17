@@ -30,6 +30,13 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseCors(p =>
+{
+    p.AllowAnyOrigin();
+    p.AllowAnyHeader();
+    p.AllowAnyMethod();
+});
+
 app.UseAuthorization();
 
 app.UseHeaderImage();
